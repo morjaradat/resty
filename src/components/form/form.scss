@@ -1,0 +1,52 @@
+$backgroundColor: #efefef;
+$radius: 10px;
+
+form {
+  width: 200px;
+  label:first-child span {
+    margin-top: 0.4rem;
+    flex-grow: 0;
+  }
+
+  label {
+    display: flex;
+    margin: 0.5rem 0.5rem;
+    input[type="text"] {
+      flex-grow: 1;
+      width: 100vh;
+      margin: 0 0.5rem;
+      height: 1.9rem;
+      border-radius: 10px;
+      padding-left: 0.5rem;
+    }
+    button[type="submit"] {
+      all: unset;
+      padding: 0.5rem;
+      background: hsla(216, 91%, 55%, 0.9);
+      color: white;
+      border-radius: 10px;
+      &:hover,
+      &.active {
+        background: hsla(216, 91%, 55%, 0.8);
+        color: rgb(0, 0, 0);
+      }
+    }
+    &.methods {
+      span {
+        cursor: pointer;
+        margin-right: 1rem;
+        padding: 0.5rem;
+        color: white;
+
+        background: hsla(216, 91%, 55%, 0.9);
+        border-radius: $radius;
+
+        &:hover,
+        &.active {
+          background: hsla(216, 91%, 55%, 0.8);
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+}
